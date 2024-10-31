@@ -41,12 +41,11 @@ const Home = () => {
           style={{
             borderBottomLeftRadius: 10,
             borderTopLeftRadius: 10,
-            backgroundColor: 'crimson',
+            backgroundColor: '#130f40',
             height: 50,
-            width: 15,
+            width: 20,
             marginLeft: -5.5,
             marginVertical: -5.5,
-            borderColor: '#130f40',
           }}></View>
         <Text
           style={{
@@ -59,13 +58,14 @@ const Home = () => {
         </Text>
         <TouchableOpacity
           style={{
-            backgroundColor: '#192a56',
+            backgroundColor: 'crimson',
             width: 30,
             height: 30,
             justifyContent: 'center',
             alignItems: 'center',
             borderRadius: 7,
-            marginLeft: 320,
+            position: 'absolute',
+            right: 10,
             marginTop: 10,
             position: 'absolute',
           }}
@@ -128,9 +128,7 @@ const Home = () => {
         style={{
           margin: 20,
           backgroundColor: 'white',
-          elevation: 3,
           borderRadius: 10,
-          marginTop: -20,
           flexDirection: 'row',
         }}>
         <TextInput
@@ -141,13 +139,14 @@ const Home = () => {
         />
         <TouchableOpacity
           style={{
-            backgroundColor: 'crimson',
+            backgroundColor: '#130f40',
             width: 30,
             height: 30,
             justifyContent: 'center',
             alignItems: 'center',
             borderRadius: 7,
-            marginLeft: 310,
+            position: 'absolute',
+            right: 15,
             marginTop: 10,
             position: 'absolute',
           }}
