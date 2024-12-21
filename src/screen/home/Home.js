@@ -30,9 +30,7 @@ const Home = () => {
         style={{
           margin: 15,
           padding: 5,
-          borderWidth: 1 / 2,
-          borderColor: 'red',
-          backgroundColor: 'white',
+          backgroundColor: '#303c41',
           borderRadius: 10,
           flexDirection: 'row',
           alignItems: 'center',
@@ -41,24 +39,25 @@ const Home = () => {
           style={{
             borderBottomLeftRadius: 10,
             borderTopLeftRadius: 10,
-            backgroundColor: '#130f40',
+            backgroundColor: '#80cbc4',
             height: 50,
-            width: 20,
+            width: 15,
             marginLeft: -5.5,
             marginVertical: -5.5,
           }}></View>
         <Text
           style={{
-            color: 'black',
-            fontSize: 15,
+            color: 'grey',
+            fontSize: 17,
+            fontWeight: 'bold',
             marginLeft: 10,
-            fontFamily: 'Roboto-Regular',
+            fontFamily: 'Roboto-Medium',
           }}>
           {item.nama}
         </Text>
         <TouchableOpacity
           style={{
-            backgroundColor: 'crimson',
+            backgroundColor: '#142227',
             width: 30,
             height: 30,
             justifyContent: 'center',
@@ -103,20 +102,22 @@ const Home = () => {
     setTodo(newsData);
   };
   return (
-    <View style={{flex: 1, backgroundColor: '#3d3d3d'}}>
-      <StatusBar barStyle={'light-content'} backgroundColor={'crimson'} />
+    <View style={{flex: 1, backgroundColor: '#1a2327'}}>
+      <StatusBar barStyle={'light-content'} backgroundColor={'#192227'} />
       <View
         style={{
           width: '100%',
           height: 50,
-          borderBottomLeftRadius: 40,
-          borderBottomRightRadius: 40,
-          backgroundColor: '#192a56',
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Text style={{color: 'white', fontFamily: 'Roboto-Bold', fontSize: 21}}>
-          ToDoList
+        <Text
+          style={{
+            color: 'white',
+            fontFamily: 'Roboto-Bold',
+            fontSize: 25,
+          }}>
+          Todolist
         </Text>
       </View>
       <FlatList
@@ -127,19 +128,19 @@ const Home = () => {
       <View
         style={{
           margin: 20,
-          backgroundColor: 'white',
+          backgroundColor: '#7f8c8d',
           borderRadius: 10,
           flexDirection: 'row',
         }}>
         <TextInput
           value={input}
           onChangeText={text => setInput(text)}
-          placeholder="masukan nama disini"
-          style={{marginLeft: 20, color: 'black'}}
+          placeholder="masukan nama disini ..."
+          style={{marginLeft: 10, color: 'black'}}
         />
         <TouchableOpacity
           style={{
-            backgroundColor: '#130f40',
+            backgroundColor: '#1c2227',
             width: 30,
             height: 30,
             justifyContent: 'center',
@@ -151,7 +152,7 @@ const Home = () => {
             position: 'absolute',
           }}
           onPress={() => addTodo()}>
-          <Text style={{fontSize: 21, color: 'white', fontWeight: '700'}}>
+          <Text style={{fontSize: 16, color: 'grey', fontWeight: 'bold'}}>
             +
           </Text>
         </TouchableOpacity>
